@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="UTF-8"> 
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav-wrapper">
+                  <a href="#!" class="brand-logo">Files</a>
+                </div>
+              </nav>
+        </header>
+
+        <div class="row container">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s10">
+                  <input id="link_git" type="text" class="validate">
+                  <label for="link_git">Link Github</label>
+                </div>
+                <div class=" input-field col s2">
+                    <a class="btn-floating btn waves-effect waves-light gren"onclick="makeTable()" ><i class="material-icons">find_in_page</i></a>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        <table class="striped container"  id="FileTable" border="1">
+            <thead>
+                <tr>
+                    <td>extension</td>
+                    <td>Count</td>
+                    <td>Lines</td>
+                </tr>
+            </thead>
+            <tbody id="FileTableBudy">
+            </tbody>
+        </table>
+
+        <script>
+        </script>
+        <!--JavaScript at end of body for optimized loading-->
+        <script type="text/javascript" src="materialize/js/materialize.min.js"></script>      
+    </body>
+</html>
